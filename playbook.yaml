@@ -1,5 +1,6 @@
 - name: demo
   hosts: localhost
+  become: yes
   tasks:
     - debug:
         msg: "Hello from pull"
