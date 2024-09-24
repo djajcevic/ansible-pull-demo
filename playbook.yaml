@@ -3,3 +3,8 @@
   tasks:
     - debug:
         msg: "Hello from pull"
+    - name: Ensure curl is installed
+      apt:
+        name: curl
+        state: present
+        update_cache: yes
